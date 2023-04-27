@@ -58,7 +58,7 @@ function resolveCollision(praticel, otherPraticel) {
         const u1 = rotate(praticel.velocity, -angle);
         const u2 = rotate(otherPraticel.velocity, -angle);
 
-        const v1 = {x: (((m1 - m2) * u1.x) +2 * m2 * u2.x / (m1 + m2)), y: u1.y};
+        const v1 = {x: (((m1 - m2) * u1.x) + 2 * m2 * u2.x / (m1 + m2)), y: u1.y};
         const v2 = {x: ((2 * m1 * u1.x + (m2 - m1) * u2.x)  / (m1 + m2)), y: u2.y};
 
         const v1Final = rotate(v1, angle);
